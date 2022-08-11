@@ -22,3 +22,9 @@ Or just dive head first! We have many features:
  - state management (HTML)
  - time travel debugging (the browser's back and forward buttons)
  - view = <var>f</var>(state) (response = <var>server</var>(request))
+
+Get started:
+
+  ~~~
+  deno run -Ar https://raw.githubusercontent.com/dz4k/deno-htmx-starter/dev/boiler.ts my-project-directory
+  ~~~
