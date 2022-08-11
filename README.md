@@ -28,3 +28,9 @@ Get started:
   ~~~
   deno run -Ar https://raw.githubusercontent.com/dz4k/deno-htmx-starter/dev/boiler.ts my-project-directory
   ~~~
+
+Run:
+
+  ~~~
+  deno task start
+  ~~~
