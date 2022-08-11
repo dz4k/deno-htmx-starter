@@ -1,14 +1,13 @@
 /** @jsx h */
-/** @jsxFrag Fragment */
 
-import { emit, oak } from "./deps.ts";
-import { Fragment, h, handleHtml } from "./html.tsx";
-import { Counter, HomePage, Page } from "./components.tsx";
+import { oak } from "./deps.ts";
+import { h, handleHtml } from "./html.tsx";
+import { Counter, HomePage } from "./components.tsx";
 
 const router = new oak.Router();
 export default router;
 
-router.get("/", handleHtml((ctx) => <HomePage />));
+router.get("/", handleHtml((_) => <HomePage />));
 
 router.get(
   "/numbers/:value",

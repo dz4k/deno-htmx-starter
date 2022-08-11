@@ -1,6 +1,4 @@
-import { Page } from "./components.tsx";
 import { oak } from "./deps.ts";
-import { h, serveHtml } from "./html.tsx";
 import router from "./routes.tsx";
 
 const app = new oak.Application();

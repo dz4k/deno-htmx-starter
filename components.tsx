@@ -1,12 +1,11 @@
 /** @jsx h */
-/** @jsxFrag Fragment */
 
-import { Fragment, h } from "./html.tsx";
+import { h, VNode } from "./html.tsx";
 
 type PageProps = {
   title?: string;
-  headExtras?: any;
-  children?: any;
+  headExtras?: VNode;
+  children?: VNode;
 };
 
 /**
