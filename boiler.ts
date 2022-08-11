@@ -15,6 +15,8 @@ const scaffoldFiles = [
 
 const projectDir = resolve(Deno.args[0]);
 
+await Deno.mkdir(projectDir, { recursive: true })
+
 await Promise.all(scaffoldFiles.map(downloadFile));
 
 async function downloadFile(path: string) {
