@@ -7,7 +7,7 @@ A test of writing server-heavy, HTML-oriented applications using:
  - Oak
  - NanoJSX (as a template engine)
 
-htmx brings the interactivity of SPAs to 80s-style links-and-forms apps,
+htmx brings the interactivity of SPAs to classical, links-and-forms apps &mdash;
 radically expanding frontend possibilities and improving user experience while 
 keeping the simple programming model of a server that accepts requests and
 returns HTML.
