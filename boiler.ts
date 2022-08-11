@@ -5,6 +5,7 @@ if (Deno.args.length < 1) {
 }
 
 const scaffoldFiles = [
+  "./deno.json",
   "./deps.ts",
   "./html.tsx",
   "./components.tsx",
