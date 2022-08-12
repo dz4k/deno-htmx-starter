@@ -26,7 +26,7 @@ Or just dive head first! We have many features:
 Get started:
 
   ~~~
-  deno run -Ar https://raw.githubusercontent.com/dz4k/deno-htmx-starter/dev/boiler.ts my-project-directory
+  deno run -rA https://github.com/dz4k/deno-htmx-starter/raw/dev/boiler.ts my-project-directory
   ~~~
 
 Run:
