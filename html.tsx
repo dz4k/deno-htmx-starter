@@ -1,25 +1,24 @@
 /** @jsx h */
 /** @jsxFrag Fragment */
 
-import { nanojsx, oak } from "./deps.ts";
+import { femtojsx, oak } from "./deps.ts";
 
-const { Fragment, h, renderSSR } = nanojsx;
-export { Fragment, h };
-
-export type VNode = ReturnType<typeof h>;
-
-type NotPromise = { then?: void };
+const { h, Fragment } = femtojsx;
+export { femtojsx, Fragment };
 
 export function handleHtml<TPath extends string, TState extends oak.State>(
-  cb: (ctx: oak.RouterContext<TPath, oak.RouteParams<TPath>>) => NotPromise,
+  cb: (
+    ctx: oak.RouterContext<TPath, oak.RouteParams<TPath>>,
+  ) => femtojsx.VNode | Promise<femtojsx.VNode>,
 ): oak.RouterMiddleware<TPath, oak.RouteParams<TPath>, TState> {
-  return (ctx) => serveHtml(ctx, () => cb(ctx));
+  return async (ctx) => serveHtml(ctx, await cb(ctx));
 }
 
 export function serveHtml<TPath extends string>(
   ctx: oak.RouterContext<TPath, oak.RouteParams<TPath>>,
-  cb: () => unknown,
+  cb: femtojsx.VNode,
 ): void {
+  console.log(cb);
   ctx.response.type = "text/html";
-  ctx.response.body = "<!doctype html>" + renderSSR(() => cb());
+  ctx.response.body = "<!doctype html>" + femtojsx.render(cb);
 }

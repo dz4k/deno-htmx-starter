@@ -1,7 +1,7 @@
-/** @jsx h */
+/** @jsx femtojsx.h */
 
 import { oak } from "./deps.ts";
-import { h, handleHtml } from "./html.tsx";
+import { femtojsx, handleHtml } from "./html.tsx";
 import { Counter, HomePage } from "./components.tsx";
 
 const router = new oak.Router();

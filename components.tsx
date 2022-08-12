@@ -1,17 +1,17 @@
-/** @jsx h */
+/** @jsx femtojsx.h */
 
-import { h, VNode } from "./html.tsx";
+import { femtojsx } from "./html.tsx";
 
 type PageProps = {
   title?: string;
-  headExtras?: VNode;
-  children?: VNode;
+  headExtras?: femtojsx.VNode;
+  children?: femtojsx.VNode;
 };
 
 /**
  * A page layout.
  */
-export function Page(props: PageProps) {
+export function Page(props: PageProps): femtojsx.JSX.Element {
   return (
     <html lang="en">
       <head>
@@ -64,6 +64,7 @@ export function Counter(props: { value: number }) {
       <button hx-get="/numbers/0">Reset</button>
       <output class="h1 block">{props.value}</output>
       <button hx-get={successorHref}>Increment</button>
+      <img src="https://placekitten.com/100/100">wrong</img>
     </div>
   );
 }
