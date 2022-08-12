@@ -5,7 +5,6 @@ A test of writing server-heavy, HTML-oriented applications using:
 
  - Deno
  - Oak
- - NanoJSX (as a template engine)
 
 htmx brings the interactivity of SPAs to classical, links-and-forms apps &mdash;
 radically expanding frontend possibilities and improving user experience while 
