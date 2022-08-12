@@ -11,7 +11,7 @@ type PageProps = {
 /**
  * A page layout.
  */
-export function Page(props: PageProps): femtojsx.JSX.Element {
+export function Page(props: PageProps) {
   return (
     <html lang="en">
       <head>
@@ -31,6 +31,7 @@ export function Page(props: PageProps): femtojsx.JSX.Element {
     </html>
   );
 }
+
 
 export function HomePage() {
   return (
