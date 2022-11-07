@@ -19,8 +19,8 @@ htmx.
 Or just dive head first! We have many features:
 
  - state management (HTML)
- - time travel debugging (the browser's back and forward buttons)
- - view = <var>f</var>(state) (response = <var>server</var>(request))
+ - time travel debugging (back and forward buttons)
+ - elm architecture (REST)
 
 Get started:
 
